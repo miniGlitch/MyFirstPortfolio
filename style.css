@@ -1,61 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
 body {
-    font-family: Hack, monospace;
     margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-margin: 10em 0 0 0;
 }
 
-/* -----NAVBAR----- */
+/* ------NAVBAR------- */
 
-nav {
-    margin: 25px;
-    background: #f9f9f9;
-    padding: 16px;
-}
-
-nav .menuItems {
-    list-style: none;
-    display: flex;
-}
-
-nav .menuItems li {
-    margin: 50px;
-}
-
-nav .menuItems li a {
-    text-decoration: none;
-    color: #8f8f8f;
-    font-size: 24px;
-    font-weight: 400;
-    transition: all 0.5s ease-in-out;
-    position: relative;
-    text-transform: uppercase;
-}
-
-nav .menuItems li a::before {
-    content: attr(data-item);
-    transition: 0.5s;
-    color: #8254ff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+#navbar {
+    position: fixed;
+    top: 19px;
     left: 0;
-    right: 0;
-    width: 0;
-    overflow: hidden;
-}
-
-nav .menuItems li a:hover::before {
     width: 100%;
-    transition: all 0.5s ease-in-out;
+    background-color: rgba(207, 198, 198, 0.561);
+    height: 7em;
 }
 
-/* -----NAVBAR----- */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
 
-/* <!-- --------PROJECTS------- --> */
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
 
-.project-tile img {
-    width: 250px;
+nav ul li {
+    margin: -6px auto .7em;
+    letter-spacing: .3em;
+    font-size: 1.2rem;
+    ;
+}
+
+nav ul li:hover {
+    letter-spacing: .5em;
+}
+
+nav ul a:hover {
+    color: gray;
+}
+
+/* ------NAVBAR------- */
+
+/* -------HERO------ */
+
+#welcome-section {
+    padding: 7%;
+    text-align: center;
+    background-image: url('desktop.jpg');
+    background-position: 96%;
+    background-size: cover;
+    color: black;
+    height: 600px;
+}
+
+header {
+    margin-bottom: 4em;
+    text-align: left;
+    margin-top: 11em;
+    margin-right: 11em;
+}
+
+header h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    font-size: bold;
+    letter-spacing: 0.07rem;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-block-start: -22px;
+}
+
+/* ---------ABOUT------ */
+
+#about {
+    padding: 7%;
+    text-align: left;
+    display: block;
+    font-size: bold;
+}
+
+#about div h3 {
+    letter-spacing: .3em;
+    font-size: 1.3em;
+}
+
+/* -----PROJECTS------- */
+
+#projects h2 {
+    text-transform: lowercase;
+    letter-spacing: .3em;
+    font-size: 1.3em;
+    padding-left: 7%;
+    margin-top: 2em;
+    margin-bottom: 0;
 }
 
 .flexbox-container {
+    padding: 0 7% 0;
+}
+
+.flexbox-container img {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 4px 17px 7px -7px rgba(148, 138, 148, 1);
+    -moz-box-shadow: 4px 17px 7px -7px rgba(148, 138, 148, 1);
+    box-shadow: 4px 17px 7px -7px rgba(148, 138, 148, 1);
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.project-tile p {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* -------FOOTER-------- */
+
+#contact {
+    background-color: #EBCFCE;
+    padding: 0 7% 0;
+    height: 150px;
+}
+
+footer {
+    padding-top: 2.5em;
+}
+
+footer h2 {
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+footer ul {
+    list-style: none;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+footer ul li {
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: rgb(95, 92, 92);
+}
+
+footer ul li a i:hover {
+    color: white;
+    font-size: 1.5rem;
 }
